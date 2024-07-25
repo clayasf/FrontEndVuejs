@@ -106,26 +106,39 @@
         const cep = this.cep.replace(/\D/g, ''); 
             try {
                 if (cep) {
-                let response =  await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
 
-                if (!response.data.erro) {
-                    this.endereco = response.data;
-                    this.mostrarFormulario = true;
-                } else {
-                    // const bsAlert = new bootstrap.Alert('CEP não encontrado!')
-                    alert('CEP não encontrado!');
-                    this.mostrarFormulario = false;
-                }
+                  let response =  await axios.get(`http://localhost:8000/cep/${cep}`);
+                  console.log('response.data',response.data)
+
+                  if (!response.data.erro) {
+                      this.endereco = response.data;
+                      this.mostrarFormulario = true;
+                  } else {
+                      alert('CEP não encontrado!');
+                      this.mostrarFormulario = false;
+                  }
                 } else {
                     alert('Por favor, insira um CEP válido.');
                     this.mostrarFormulario = false;
                 }
                 
             } catch (error) {
-                alert('CEP com formato Invalido');
-                console.log('algo deu errado')
-                this.mostrarFormulario = true;
-                
+              try {
+                  let response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
+                  console.log('Não usou o BackEnd', response.data);
+                  
+                  if (!response.data.erro) {
+                      this.endereco = response.data;
+                      this.mostrarFormulario = true;
+                  } else {
+                      alert('CEP não encontrado!');
+                      this.mostrarFormulario = false;
+                  }
+              } catch (error) {
+                  alert('CEP com formato inválido');
+                  console.log('Algo deu errado', error);
+                  this.mostrarFormulario = false;
+              }
             }
             
       }

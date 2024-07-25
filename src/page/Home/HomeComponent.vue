@@ -19,12 +19,12 @@
               </a>
             </dt>
             <dd class="col-sm-9">
-              <p>3333</p>
+              <p>É possivel Clicar na imagem e ser redirecionado para o site da TradeUP.</p>
             </dd>
-            <dt class="col-sm-3">Nossas soluções</dt>
+            <dt class="col-sm-3"></dt>
             <dd class="col-sm-9">
               <p>Nossas soluções transformaram o modelo de venda de serviços no varejo brasileiro.</p>
-              <p>Acima temos a imagem conforme pedido no teste preferi usar o próprio logo e com esse input float readonly para demonstração de texto de tela inicial.</p>
+              
             </dd>
           </dl>
         </div>
