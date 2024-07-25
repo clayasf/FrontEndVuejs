@@ -10,8 +10,8 @@
           <dl class="row">
             <dt class="col-sm-3">Descrição:</dt>
             <dd class="col-sm-9">
-              <p>Definition for the term.</p>
-              <p>And some more placeholder definition text.</p>
+              <p>Menus acima estão são SPA e não são recarregados ao click</p>
+              <p>Na pagina de CEP é possivel fazer a pesquisa no qual ao encontrar o cep é apresentado os dados na tela.</p>
             </dd>
             <dt class="col-sm-3">
               <a href="https://www.tradeupgroup.com/" target="_blank">
