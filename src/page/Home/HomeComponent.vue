@@ -5,20 +5,12 @@
       </main>
       <div class="card shadow-sm">
         <div class="card-body">
-          <h5 class="card-title">Teste para Empresa TradeUp</h5>
-          <p class="card-text">Abaixo temos a imagem conforme pedido no teste.</p>
+          <h5 class="card-title">Teste para Empresa</h5>
           <dl class="row">
             <dt class="col-sm-3">Descrição:</dt>
             <dd class="col-sm-9">
               <p>Menus acima estão são SPA e não são recarregados ao click</p>
-              <p>É possivel Clicar na imagem e ser redirecionado para o site da TradeUP.</p>
-            </dd>
-            <dt class="col-sm-3">
-              <a href="https://www.tradeupgroup.com/" target="_blank">
-                <img alt="tradeup logo" class="img-fluid" src="../../assets/tradeup-300x93-1.png" />
-              </a>
-            </dt>
-            <dd class="col-sm-9">
+              <p>É possivel Clicar na imagem e ser redirecionado para o site da.</p>
               <p>Na pagina de CEP é possivel fazer a pesquisa no qual ao encontrar o cep é apresentado os dados na tela.</p>
             </dd>
             <dt class="col-sm-3"></dt>

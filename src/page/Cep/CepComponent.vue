@@ -107,7 +107,8 @@
             try {
                 if (cep) {
 
-                  let response =  await axios.get(`http://localhost:8000/cep/${cep}`);
+                  let response =  await axios.get(`http://backendlumen.com/cep/${cep}`);
+                  console.log('Utilizado API local');
                   console.log('response.data',response.data)
 
                   if (!response.data.erro) {
